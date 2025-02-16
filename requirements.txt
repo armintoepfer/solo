@@ -1,0 +1,4 @@
+flask[async]
+aiohttp
+hypercorn
+async-upnp-client
