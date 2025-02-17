@@ -1,7 +1,7 @@
 # SoLo (Sonos Local) 🔊
 
-A modern, responsive web interface for controlling your Sonos speakers. Control
-playback, manage groups, and adjust volume with a clean, intuitive UI.
+A modern, responsive web interface for controlling your local Sonos speakers.
+Control playback, manage groups, and adjust volume with a clean, intuitive UI.
 
 ## Features
 
@@ -12,24 +12,34 @@ playback, manage groups, and adjust volume with a clean, intuitive UI.
 - Responsive design for all devices
 - Real-time status updates
 
+## Screenshots
+
+<img src="docs/imgs/screenshot.png" alt="SoLo Screenshot dark" width="800px">
+
 ## Getting Started
 
 ### Prerequisites
 
-- Python 3.x
+- Python 3.7+
 - Sonos speakers on your local network
+- [uv](https://github.com/astral-sh/uv) for dependency management
 
 ### Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/sonos-web-controller.git
-cd sonos-web-controller
+git clone https://github.com/armintoepfer/solo.git
+cd solo
 ```
 
-2. Install dependencies:
+2. Install dependencies with uv:
 ```bash
-pip install -r requirements.txt
+uv venv
+source .venv/bin/activate  # On Unix/macOS
+# or
+.venv\Scripts\activate     # On Windows
+
+uv pip install -r requirements.txt
 ```
 
 3. Run the application:
